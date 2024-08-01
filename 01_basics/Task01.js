@@ -67,12 +67,41 @@ Properties of Math Library
 
 /*
 Video 13
+Date and Time
+let newDate = new Date()
+
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay());
+newDate.toLocaleString('default', {
+    weekday: "long",
+})
+console.log(newDate)
 */
 
 /*
-Video 14
+Video 14 - Arrays 01
+
+const Arr = [0, 1, 2, 3, 4, 5]
+Array Methods
+Push - Pop
+Shift - Unshift
+
+includes
+indexOf
+
+join()
+
+slice
+splice
 */
 
 /*
-Video 15
+Video 15 - Arrays 02
+
+concat()
+spread()
+flat()
+isArray()
+from()
+of()
 */
