@@ -3,7 +3,7 @@ JavaScript – Video 26
 
 Introduction to Control Flow
 
-Basic Conditional Statements, Loops and Nested Loops:
+Basic Conditional Statements and Nesting:
 If, If-Else, Else-if with operators i.e. <, >, =, !=, <=, >=, ===(checks datatype too)
 Use of Logical Operators {AND(&&), OR(||), NOT(!)} for conditions
 
