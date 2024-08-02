@@ -1,1 +1,1 @@
-# JavaScript-Task01
+# Learn - JS
