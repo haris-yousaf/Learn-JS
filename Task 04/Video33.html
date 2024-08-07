@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 33 - Element Creation in DOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    div.className = 'main'
+    div.id = 'mainId'
+    div.setAttribute('title', 'mainTitle')
+    div.style.backgroundColor = '#212121'
+    div.style.color = 'white'
+
+    // div.innerText = "This is the inner text."
+    const addText = document.createTextNode("This is the text node")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>

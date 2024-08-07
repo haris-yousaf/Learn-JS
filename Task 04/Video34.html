@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 34</title>
+</head>
+<body>
+    <ul class="languages">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.languages').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("C++")
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))           // Better approach because complete traversing doesn't take place
+        document.querySelector('.languages').appendChild(li)
+    }
+    addOptiLanguage("TypeScript")
+
+    // To edit values
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "Edited Python"
+    secondLang.replaceWith(newLi)
+
+    // To remove values
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
