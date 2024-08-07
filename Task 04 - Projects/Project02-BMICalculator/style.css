@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #797978;
+}
+.container {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+
+  #height,
+  #weight {
+    width: 250px;
+    height: 25px;
+    margin-top: 30px;
+  }
+  
+  #weight-guide {
+    margin-top: 25px;
+  }
+  
+  #results {
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+  }
+  
+  button {
+    margin-top: 25px;
+    background-color: #fff;
+    padding: 5px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    font-size: 25px;
+  }
