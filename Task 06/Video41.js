@@ -1,0 +1,9 @@
+/*
+Understanding the concepts behind fetching and promises in JavaScript.
+
+Introduction to Fetch API and its impact on web development.
+
+Understanding Promise in JavaScript fetch requests
+
+Understanding how data is managed in memory and accessed through network requests.
+*/
