@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 49 - Lexical Scoping and Closure</title>
+</head>
+<body style="background-color: #313131; text-align: center; height: 500px; align-content: center;">
+    <h1>CLICK TO CHANGE BACKGROUND COLOR</h1>
+    <button id="orange" style="background-color: orange;">Orange</button>
+    <button id="green" style="background-color: green;">Green</button>
+    <button id="default" style="background-color: #313131;">Default</button>
+</body>
+
+    <script>
+    // function init() {
+    //     let name = "Haris"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // function outer(){
+    //     let username = "haris"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "123456"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("Outerest", username);
+
+
+    // function makeFunc() {
+    //     const name = "Haris";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    </script>
+    <script>
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+        document.getElementById('default').onclick = clickHandler("#313131")
+
+    </script>
+</html>
